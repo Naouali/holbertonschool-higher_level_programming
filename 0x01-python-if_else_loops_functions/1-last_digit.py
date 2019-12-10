@@ -6,7 +6,7 @@ if number >= 0:
 else:
     last = number % -10
 print('Last digit of', number, 'is', last, end=' ')
-if last  == 0:
+if last == 0:
     print("and is 0")
 elif last > 5:
     print("and is greater than 5")
