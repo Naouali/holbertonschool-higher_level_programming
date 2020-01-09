@@ -9,3 +9,8 @@ class Square:
             raise TypeError
         else:
             self.__size = size
+
+    def area(self):
+        size = self.__size
+        area = size * size
+        return area
