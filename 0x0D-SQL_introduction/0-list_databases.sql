@@ -1,2 +1,2 @@
---list all databeses
+-- list all databeses
 SHOW DATABASES;
