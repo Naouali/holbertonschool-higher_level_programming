@@ -1,2 +1,2 @@
 -- list all values in table
-DESCRIBE first_table;
+SELECT * FROM first_table;
