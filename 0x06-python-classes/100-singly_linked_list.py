@@ -35,10 +35,4 @@ class Node:
 class SinglyLinkedList:
     def __init__(self):
         self.head = None
-        
-    def add_nodes(self, value):
-        new_node = Node(value, None)
-        self.head = new_node
-
-    def sorted_insert(self, value):
-        
+#rest is to add nodes/ then retrive all the data inserted and print it sorted one per line        
