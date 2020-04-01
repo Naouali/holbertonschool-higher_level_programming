@@ -1,6 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 class Square:
-
     def __init__(self, size=0):
         if type(size) == int:
             if size < 0:
@@ -8,10 +7,19 @@ class Square:
             else:
                 self.__size = size
         else:
-            raise TypeError("size muse be an integer")
+            raise TypeError("size must be an integer")
 
-        def area(self):
-            return self.__size * self.__size
+    def area(self):
+        return self.__size * self.__size
+
+    def my_print(self):
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end="")
+                print()
 
     @property
     def size(self):
