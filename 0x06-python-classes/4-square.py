@@ -10,8 +10,8 @@ class Square:
         else:
             raise TypeError("size muse be an integer")
 
-        def area(self):
-            return self.__size * self.__size
+    def area(self):
+        return self.__size * self.__size
 
     @property
     def size(self):
