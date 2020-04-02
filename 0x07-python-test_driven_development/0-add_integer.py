@@ -5,6 +5,8 @@ them together. exemple:
 >>> add_integer(1, 4)
 5
 """
+
+
 def add_integer(a, b=98):
     """function to add integer"""
     if type(a) != int and type(a) != float:
@@ -13,6 +15,8 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     else:
         return int(a) + int(b)
+
+
 if __name__ == "__main__":
     import doctest
     doctest.testfile("tests/0-add_integer.txt")
