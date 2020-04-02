@@ -7,7 +7,9 @@ Using "add_integer"
 "add_integer" return the sum of a and b
 
 >>> add_integer = __import__("0-add_integer").add_integer
+
 """ Use of add_integer """
+
 >>> add_integer(1, 2)
 
 3 
