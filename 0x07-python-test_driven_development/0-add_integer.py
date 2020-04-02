@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import sys
-
-
-
+"""This is "0-add_integer" module.
+This function takes to integer or floats and add
+them together. exemple:
+>>> add_integer(1, 4)
+5
+"""
 def add_integer(a, b=98):
     """function to add integer"""
     if type(a) != int and type(a) != float:
