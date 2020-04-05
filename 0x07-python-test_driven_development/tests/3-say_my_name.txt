@@ -1,13 +1,13 @@
->>>say_my_name = __import__(3-say_my_name).say_my_name
->>>say_may_name("jhon", "smith")
->>>my name is jhon smith
->>>say_my_name("holberton", "98")
->>>my name is holberton 98
->>>say_my_name("holberton", 98)
+>>> say_my_name = __import__(3-say_my_name).say_my_name
+>>> say_may_name("jhon", "smith")
+my name is jhon smith
+>>> say_my_name("holberton", "98")
+my name is holberton 98
+>>> say_my_name("holberton", 98)
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
->>>say_my_name(98,"holberton")
+>>> say_my_name(98,"holberton")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
