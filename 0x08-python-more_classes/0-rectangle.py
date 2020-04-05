@@ -1,0 +1,9 @@
+#!/usr/bin/python
+"""
+empty class module
+"""
+
+
+class Rectangle:
+    """class to creat an empty class Rectange"""
+    pass
