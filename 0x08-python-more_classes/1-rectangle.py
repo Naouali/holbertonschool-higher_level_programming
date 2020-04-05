@@ -12,12 +12,16 @@ class Rectangle:
         self.width = width
     @property
     def width(self):
-        """retrive the width attribute"""
+        """retrive the width attribute
+        returns: int
+        """
         return self.__widht
 
     @width.setter
     def width(self, value):
-        """set the width sttribute"""
+        """set the width sttribute
+        argument :int
+        """
         if value < 0:
             raise ValueError("width must be >= 0")
         if type(value) != int:
