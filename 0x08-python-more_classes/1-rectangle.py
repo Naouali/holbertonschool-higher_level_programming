@@ -10,17 +10,20 @@ class Rectangle:
         """define a rectange by its width and height"""
         self.height = height
         self.width = width
+
     @property
     def width(self):
         """retrive the width attribute
-        returns: int
+        Returns: 
+        int
         """
         return self.__widht
 
     @width.setter
     def width(self, value):
         """set the width sttribute
-        argument :int
+        Args:
+        int
         """
         if value < 0:
             raise ValueError("width must be >= 0")
