@@ -6,10 +6,6 @@ rectangle module
 
 class Rectangle:
     """class to create a rectangle"""
-    def __init__(self, width=0, height=0):
-        """define a rectange by its width and height"""
-        self.height = height
-        self.width = width
 
     @property
     def width(self):
@@ -44,3 +40,8 @@ class Rectangle:
         if type(value) != int:
             raise TypeError("width must be an integer")
         self.__height = value
+
+    def __init__(self, width=0, height=0):
+        """define a rectange by its width and height"""
+        self.height = height
+        self.width = width
