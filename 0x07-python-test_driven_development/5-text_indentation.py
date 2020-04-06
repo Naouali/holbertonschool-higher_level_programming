@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+def text_indentation(text):
+    if type(text) != str or len(text) == 0:
+        raise TypeError("text must be a string")
+    j = 0
+    while j !=  len(text):
+       if text[j - 1] == "?":
+           print(text[j], end ="")
+    j = j + 1
+           
