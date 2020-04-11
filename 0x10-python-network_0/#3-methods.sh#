@@ -1,0 +1,3 @@
+#!/bin/bash
+# display all methods
+s=$(curl -s -
