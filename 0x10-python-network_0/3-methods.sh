@@ -1,4 +1,3 @@
 #!/bin/bash
 # display all methods
-s=$(curl -s -i "$1" | grep Allow | head -n 1)
-cut -d " " -f2- <<< "$s"
+curl -s --head "$1" | head -n4 | tail -n1 | cut -d' ' -f2-
