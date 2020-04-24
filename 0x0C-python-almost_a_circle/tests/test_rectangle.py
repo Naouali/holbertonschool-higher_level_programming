@@ -23,5 +23,3 @@ class TestBase(unittest.TestCase):
             self.assertEqual(R.id, 12)
             R = Rectangle(-2, 1)
             self.assertEqual(R.id, 3)
-        with self.assertRaises(TypeError):
-            R = Rectangle()
