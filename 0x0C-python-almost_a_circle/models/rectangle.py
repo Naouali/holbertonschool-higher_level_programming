@@ -6,7 +6,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    
+
     def __init__(self, width, height, x=0, y=0, id=None):
         self.__width = width
         self.__height = height
@@ -14,11 +14,10 @@ class Rectangle(Base):
         self.__y = y
         super().__init__(id)
 
-
     @property
     def width(self):
         return self.__width
-    
+
     @width.setter
     def width(self, width):
         if type(width) is not int:
@@ -50,7 +49,7 @@ class Rectangle(Base):
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
-    
+
     @property
     def y(self):
         return self.__y
