@@ -38,3 +38,27 @@ class Rectangle(Base):
         if height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
+
+    @property
+    def x(self):
+        return self.__x
+
+    @x.setter
+    def x(self, x):
+        if type(x) is not int:
+            raise TypeError("x must be an integer")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = x
+    
+    @property
+    def y(self):
+        return self.__y
+
+    @height.setter
+    def y(self, y):
+        if type(y) is not int:
+            raise TypeError("y must be an integer")
+        if y < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = y
