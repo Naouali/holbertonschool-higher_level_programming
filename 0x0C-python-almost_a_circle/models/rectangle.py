@@ -65,7 +65,7 @@ class Rectangle(Base):
         """get y"""
         return self.__y
 
-    @height.setter
+    @y.setter
     def y(self, y):
         """set y"""
         if type(y) is not int:
