@@ -1,3 +1,3 @@
--- adding privileges to a user
-GRANT ALL ON *.* TO user_0d_1@localhost;
-GRANT ALL ON *.* TO user_0d_2@localhost;
+-- Show privileges of a user
+SHOW GRANTS FOR user_0d_1@localhost;
+SHOW GRANTS FOR user_0d_2@localhost;
