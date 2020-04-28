@@ -119,3 +119,10 @@ class Rectangle(Base):
                     self.height = kwargs[k]
                 if k == "id":
                     self.id = kwargs[k]
+
+    def to_dictionary(self):
+        return {"id": self.id,
+                "width": self. width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y}
