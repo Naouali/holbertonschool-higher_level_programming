@@ -124,8 +124,10 @@ class Rectangle(Base):
         """
         return dict representation
         """
-        return {"id": self.id,
-                "width": self. width,
-                "height": self.height,
-                "x": self.x,
-                "y": self.y}
+        d = {}
+        d["x"] = self.x
+        d["y"] = self.y
+        d["width"] = self.width
+        d["height"] = self.height
+        d["id"] = self.id
+        return d

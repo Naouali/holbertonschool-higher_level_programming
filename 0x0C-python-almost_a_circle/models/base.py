@@ -4,7 +4,6 @@
         private class attribute __nb_objects = 0
         class constructor: def __init__(self, id=None)::
 """
-import json
 
 
 class Base:
@@ -20,10 +19,12 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """
         return json representation
         """
-        if len(list_dictionaries) == 0:
+        import json
+        if len(list_dictionaries) == 0 or list_dictionaries is None:
             return "[]"
-        return json.dumps(list_dictionaries)
+        return (json.dumps(list_dictionaries))
