@@ -112,7 +112,7 @@ class Rectangle(Base):
                 if k == "y":
                     self.y = kwargs[k]
                 if k == "x":
-                    self.y = kwargs[k]
+                    self.x = kwargs[k]
                 if k == "width":
                     self.width = kwargs[k]
                 if k == "height":
