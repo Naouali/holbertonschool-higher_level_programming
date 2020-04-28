@@ -93,16 +93,29 @@ class Rectangle(Base):
                                                        self.width,
                                                        self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """list of argument"""
-        for i, arg in enumerate(args):
-            if i == 0:
-                self.id = arg
-            elif i == 1:
-                self.width = arg
-            elif i == 2:
-                self.height = arg
-            elif i == 3:
-                self.x = arg
-            elif i == 4:
-                self.y = arg
+        if len(args) != 0:
+            for i, arg in enumerate(args):
+                if i == 0:
+                    self.id = arg
+                elif i == 1:
+                    self.width = arg
+                elif i == 2:
+                    self.height = arg
+                elif i == 3:
+                    self.x = arg
+                elif i == 4:
+                    self.y = arg
+        else:
+            for k, v in kwargs.items():
+                if k == "y":
+                    self.y = kwargs[k]
+                if k == "x":
+                    self.y = kwargs[k]
+                if k == "width":
+                    self.width = kwargs[k]
+                if k == "height":
+                    self.height = kwargs[k]
+                if k == "id":
+                    self.id = kwargs[k]
