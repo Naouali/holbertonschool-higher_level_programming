@@ -121,6 +121,9 @@ class Rectangle(Base):
                     self.id = kwargs[k]
 
     def to_dictionary(self):
+        """
+        return dict representation
+        """
         return {"id": self.id,
                 "width": self. width,
                 "height": self.height,
