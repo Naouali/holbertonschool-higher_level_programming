@@ -82,8 +82,8 @@ class Rectangle(Base):
         """print rectagle with #"""
         s = ""
         for i in range(self.height):
-            s += ("#" * self.width + "\n")
-        print(s[:-1])
+            s += (" " * self.x + "#" * self.width + "\n")
+        print("\n" * self.y + s[:-1])
 
     def __str__(self):
         """create str representation"""
