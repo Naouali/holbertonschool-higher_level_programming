@@ -127,7 +127,7 @@ class Rectangle(Base):
         d = {}
         d["x"] = self.x
         d["y"] = self.y
+        d["id"] = self.id
         d["width"] = self.width
         d["height"] = self.height
-        d["id"] = self.id
         return d
