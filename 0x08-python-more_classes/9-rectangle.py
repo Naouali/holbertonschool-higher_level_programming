@@ -118,6 +118,6 @@ class Rectangle:
         turn rectange
         to square
         """
-        cls.__height = size
         cls.__width = size
+        cls.__height = size
         return cls(size, size)
