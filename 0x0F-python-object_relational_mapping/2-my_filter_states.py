@@ -14,11 +14,12 @@ if __name__ == "__main__":
         passwd=sys.argv[2],
         user=sys.argv[1])
     c = db.cursor()
-    c.execute("""SELECT * FROM states ORDER BY id ASC""")
-    st = c.fetchall()
     arg = sys.argv[4]
+    c.execute("""SELECT * FROM states \
+            WHERE states.name LIKE BINARY "{}%"\
+            ORDER BY id ASC""".format(arg))
+    st = c.fetchall()
     for s in st:
-        if str(arg) in s:
-            print(s)
+        print(s)
     c.close()
     db.close()
