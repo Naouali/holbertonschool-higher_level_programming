@@ -1,6 +1,0 @@
-#!/usr/bin/env python3
-#selecting states from databases using mysql alchemy
-import MySQLdb
-
-db = MYSQL.connect(host=localhost:3306, user=MY_USER, passwd=MY_PASS, db=hbtn_0e_0_usa)
-states = 
