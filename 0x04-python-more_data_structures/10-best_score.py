@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    v = list(a_dictionary.values())
-    k = list(a_dictionary.keys())
-    return (k[v.index(max(v))])
+    if a_dictionary is None:
+        return None
+    return max(a_dictionary, key=a_dictionary.get)
