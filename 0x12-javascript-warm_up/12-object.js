@@ -6,6 +6,6 @@ let myObject = {
 console.log(myObject);
 myObject = {
   type: 'object',
-  value: 98
+  value: 89
 };
 console.log(myObject);
