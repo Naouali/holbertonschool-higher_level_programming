@@ -9,7 +9,7 @@ from urllib import request
 import sys
 
 
-with request.urlopen(sys.argv[1]) as data:
+with request.urlopen(str(sys.argv[1])) as data:
     header = data.getheaders()
     for x in header:
         if x[0] == "X-Request-Id":
