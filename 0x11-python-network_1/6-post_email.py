@@ -13,6 +13,6 @@ if __name__ == "__main__":
     try:
         payload = {"email": str(sys.argv[2])}
         data = requests.post(str(sys.argv[1]), data=payload)
-        print("You email is: {}".format(data.text["email"]))
+        print(data.text)
     except:
         pass
