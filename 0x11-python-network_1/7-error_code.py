@@ -13,4 +13,4 @@ if __name__ == "__main__":
     if data.status_code >= 400:
         print("Error code: {}".format(data.status_code))
     else:
-        print("Index")
+        print(data.text)
