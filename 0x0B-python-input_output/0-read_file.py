@@ -6,7 +6,7 @@ module to read files
 
 def read_file(filename=""):
     """
-    function to 
+    function to
     read file
     """
     with open(filename) as f:
